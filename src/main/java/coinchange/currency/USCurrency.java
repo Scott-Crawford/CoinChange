@@ -2,6 +2,7 @@ package coinchange.currency;
 
 import java.util.Comparator;
 
+//US currency, assumed base currency for writing the project
 public class USCurrency extends Currency {
   //Included the average denominations that most cash registers would hold. Denominations can be added or removed.
   //Selecting specific denominations based on what is currently contained inside the register would require additional methods or a register class.

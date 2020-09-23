@@ -15,6 +15,7 @@ import coinchange.util.Constants;
 
 public class CoinChangeApp {
 
+  //Expects either no args, a filename, or a filename + mode
   public static void main(String[] args) {
     try {
       //If no mode is provided from command line, use default mode from constants

@@ -14,7 +14,7 @@ public class Currency implements Comparable<Currency>{
     return "";
   }
 
-  //Needed for random method, in the case that the currency passed in doesn't contain a penny.
+  //Needed for randomChange method, in the case that the currency passed in doesn't contain a penny.
   public int getLowestCoin() {
     return 0;
   }

@@ -196,7 +196,7 @@ public class Calculator<T extends Currency> {
   }
 }
 
-//Pair class used exclusively in cleanArr method
+//Pair class used exclusively for the cleanArr method
 class Pair<T> {
 
   public final T[] arr;

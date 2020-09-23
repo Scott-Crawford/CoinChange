@@ -11,6 +11,7 @@ import coinchange.exceptions.CustomException;
 
 public class CalculatorTest {
 
+  //Test expected greedy output
   @Test
   public void calculateGreedy_99() throws Exception {
     Calculator<USCurrency> calculator = new Calculator<>(USCurrency.class);
@@ -20,6 +21,7 @@ public class CalculatorTest {
     assertTrue(map.get(USCurrency.PENNY) == 4);
   }
 
+  //Test expected DP output
   @Test
   public void calculateDP_99() throws Exception {
     Calculator<USCurrency> calculator = new Calculator<>(USCurrency.class);
@@ -29,6 +31,7 @@ public class CalculatorTest {
     assertTrue(map.get(USCurrency.PENNY) == 4);
   }
 
+  //Test possible random outputs
   @Test
   public void calculateRandom_Owed6_Paid12() throws Exception {
     Calculator<USCurrency> calculator = new Calculator<>(USCurrency.class);
@@ -36,6 +39,7 @@ public class CalculatorTest {
     assertTrue(map.get(USCurrency.PENNY) == 6 || (map.get(USCurrency.NICKEL) == 1 && map.get(USCurrency.PENNY) == 1));
   }
 
+  //Test expected exception
   @Test(expected = CustomException.class)
   public void calculate_badMode() throws Exception {
     Calculator<USCurrency> calculator = new Calculator<>(USCurrency.class);
