@@ -13,6 +13,8 @@ Download and Install these dependencies before building the program.
 - Java Development Kit - Recommend JDK 14
 - Apache Maven - Recommend Maven 3.6.3
 
+----------
+
 ## Building the Program:
 1. In the command line, from the directory containing this file, run the command "mvn clean install"
 2. There should now be a child directory in this directory, named "target". That directory contains a jar file named CoinChange-1.0.jar.
